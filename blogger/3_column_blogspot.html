@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <b:include data='blog' name='all-head-content'/>
+  <title><data:blog.pageTitle/></title>
+  <link rel="stylesheet" href="http://files.slkdesign.net/common/css/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="http://files.slkdesign.net/common/css/blueprint/print.css" type="text/css" media="print" />
+  <!--[if lt IE 8]>
+    <link rel="stylesheet" href="http://files.slkdesign.net/common/css/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <b:skin>
+<![CDATA[/*
+-----------------------------------------------
+Blogger Template Styles
+Name:     Blogspot Studio 3-Column
+Date:     27 Dec 2009
+Updated by: Steven Haddox
+----------------------------------------------- */
+
+/* @import "http://files.slkdesign.net/templates/css/blog_styles.css"; */
+
+/* Column Sizes, modified in 40px increments by the "span-#" CSS classes */
+/* 190px  |  510px  |  230px */
+
+]]></b:skin>
+</head>
+
+<body>
+  <div class='container'>
+    <!-- skip links for text browsers -->
+    <span id='skiplinks' style='display:none;'>
+      <a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+    </span>
+
+    <div id='header_wrapper' class='span-24 last'>
+      <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+        <b:widget id='Header1' locked='true' title="Title of Blog" type='Header'/>
+      </b:section>
+    </div>
+ 
+    <div id='content_wrapper'>
+      <!-- div that spans all 3 columns -->
+      <div id='multi_col_wrapper' class='span-24 last' style='text-align:center'>
+        <b:section class='multi_col' id='multi_col'/>
+      </div>
+
+      <div id='left_col_wrapper' class='span-5'>
+        <b:section class='left_col' id='left_col' preferred='yes'>
+          <b:widget id='Profile1' locked='false' title='About Me' type='Profile'/>
+        </b:section>
+      </div>
+
+      <div id='main_col_wrapper' class='span-13'>
+        <b:section class='main_col' id='main_col' showaddelement='no'>
+          <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+        </b:section>
+      </div>
+
+      <div id='right_col_wrapper' class='span-6 last'>
+        <b:section class='right_col' id='right_col' preferred='yes'>
+        </b:section>
+      </div>
+
+    </div> <!-- end content-wrapper -->
+
+    <div id='footer_wrapper' class='span-24 last'>
+      <b:section class='footer' id='footer'>
+      </b:section>
+    </div>
+
+  </div><!-- end container -->
+<!-- analytics placeholder -->
+</body>
+</html>
