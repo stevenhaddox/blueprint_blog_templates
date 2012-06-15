@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+/* STICKY FOOTER */
+html, body {
+  height: 100%;
+}
+
+footer {
+  color: #666;
+  background: #222;
+  padding: 17px 0 18px 0;
+  border-top: 1px solid #000;
+  p { 
+    margin-bottom: 0;
+    background-color: #222;
+    text-align: center;
+  }
+  a {
+    color: #999;
+  }
+  a:hover {
+    color: #efefef;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -54px;
+}
+
+.push { height: 54px; }
+/* END STICKY FOOTER */
+
+/* Bootstrap Tweaks */
+.extraneous-non-semantic-markup { padding-left: 5px; }
+
+body { background-image: url('/assets/whitey.png'); }
+
+.container { background-color: #FFF; }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example Site</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="container">
+      <div class="row">
+        <div class="span12">
+        <div class="extraneous-non-semantic-markup">
+          <h1>Example Site Title<h1>
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <aside class="span2">
+        <div class="extraneous-non-semantic-markup">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="/">Home</a></li>
+          </ul>
+          <address>
+            <strong>Example Site Name</strong><br>
+            555 Main St.<br>
+            Anytown, MD 21701<br>
+            <abbr title="Phone">P:</abbr>
+            <span><span id="gc-number-0" class="gc-cs-link" title="Call with Google Voice">(555) 555-1337</span></span>
+          </address>
+        </div>
+        </aside>
+        <div id="content" class="span10 filler">
+        <div class="extraneous-non-semantic-markup">
+            <%= yield %>
+        </div>
+        </div>
+      </div>
+      <div class="push"><!--//--></div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2012 Example Site</p>
+    </div>
+  </footer>
+
+</body>
+</html>
