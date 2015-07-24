@@ -1,0 +1,24 @@
+# Settings for main header
+header:
+  title: { Steven Haddox's Blog }
+  subtitle: Ruby, Code, Politics, and Family
+
+# Links for main navigation
+nav:
+  - { url: '/', title: 'Home' }
+  - { url: '/about', title: 'About' }
+  - { url: '/archive', title: 'Archive' }
+  - { url: '/feed', title: 'RSS' }
+
+# Settings for category index generator
+category:
+  prefix: Category
+  url:    category
+
+post_index:
+  excerpt_posts: true
+  permalink_label: "Permalink"
+  read_more_label: "Continue Reading &rarr;"
+
+# Center the text in post and page headings.
+center-headings: true

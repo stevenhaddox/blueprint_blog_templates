@@ -1,0 +1,16 @@
+# Site settings
+title: Steven Haddox's Blog
+email: steven.haddox@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Steven Haddox's personal blog about Ruby, geekery, politics, and family.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://stevenhaddox.com" # the base hostname & protocol for your site
+twitter_username: stevenhaddox
+github_username:  stevenhaddox
+
+# Build settings
+markdown: kramdown
+
+# Gem plugins
+gems:
+  - octopress-genesis-theme
